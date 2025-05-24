@@ -1,0 +1,23 @@
+{
+  "name": "database-relationships",
+  "version": "1.0.0",
+  "description": "This repo was created to effective learn and implement the concepts of relationships in database - particularly MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahaa01/Database-Relationships.git"
+  },
+  "keywords": [],
+  "author": "Aaditya Shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahaa01/Database-Relationships/issues"
+  },
+  "homepage": "https://github.com/shahaa01/Database-Relationships#readme",
+  "dependencies": {
+    "mongoose": "^8.15.0"
+  }
+}
