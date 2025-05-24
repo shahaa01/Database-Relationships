@@ -71,9 +71,9 @@ const orderSchema = new Schema({
             }
         }
     ],
-    userId: {
+    user: {
         type: Schema.Types.ObjectId,
-        ref: "User",
+        ref: "user",
         required: true
     },
 });
@@ -92,8 +92,12 @@ async function saveOrder() {
         items: [
             {name: "Puddings", price: 1100}
         ],
-        userId: _id
+        user: _id
     });
 
     await newOrder.save();
+
+    //practice populate method of mongoose - which populates the data of the ObjectId
+    let userResult = await Order.find({}).populate("user"); //can take 2nd argument of fields - , "username contact"
+    console.log(JSON.stringify(userResult, null, 3));
 }
